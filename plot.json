@@ -246,7 +246,7 @@
 "na.rm": false,
 "na.rm": false,
 "colour": "#0000FF",
-"size":        5 
+"size":        8 
 },
 "types": {
  "y": "numeric",
@@ -451,7 +451,7 @@
 "na.rm": false,
 "na.rm": false,
 "vjust":     -0.5,
-"size":        5,
+"size":        8,
 "clickSelects": "sample.id",
 "help_clickSelects": "sample.id" 
 },
