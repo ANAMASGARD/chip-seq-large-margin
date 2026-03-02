@@ -35,13 +35,7 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom1_tallrect_coverage_chunk1.tsv": {
- "bytes":      667,
-"rows": 16 
-} 
-} 
+"total": 1 
 },
 "geom2_tallrect_coverage": {
  "geom": "tallrect",
@@ -89,13 +83,7 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom2_tallrect_coverage_chunk1.tsv": {
- "bytes":    11275,
-"rows": 160 
-} 
-} 
+"total": 1 
 },
 "geom3_line_coverage": {
  "geom": "line",
@@ -123,13 +111,7 @@
  "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom3_line_coverage_chunk1.tsv": {
- "bytes":    85086,
-"rows": 1986 
-} 
-} 
+"total": 1 
 },
 "geom4_segment_coverage": {
  "geom": "segment",
@@ -175,13 +157,7 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom4_segment_coverage_chunk1.tsv": {
- "bytes":    12989,
-"rows": 180 
-} 
-} 
+"total": 1 
 },
 "geom5_point_coverage": {
  "geom": "point",
@@ -222,13 +198,7 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom5_point_coverage_chunk1.tsv": {
- "bytes":     8856,
-"rows": 180 
-} 
-} 
+"total": 1 
 },
 "geom6_text_penalty": {
  "geom": "text",
@@ -246,7 +216,7 @@
 "na.rm": false,
 "na.rm": false,
 "colour": "#0000FF",
-"size":        8 
+"size":       12 
 },
 "types": {
  "y": "numeric",
@@ -265,13 +235,7 @@
  "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom6_text_penalty_chunk1.tsv": {
- "bytes":      151,
-"rows": 3 
-} 
-} 
+"total": 1 
 },
 "geom7_segment_penalty": {
  "geom": "segment",
@@ -310,13 +274,7 @@
  "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom7_segment_penalty_chunk1.tsv": {
- "bytes":      356,
-"rows": 4 
-} 
-} 
+"total": 1 
 },
 "geom8_point_penalty": {
  "geom": "point",
@@ -349,13 +307,7 @@
  "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom8_point_penalty_chunk1.tsv": {
- "bytes":      444,
-"rows": 9 
-} 
-} 
+"total": 1 
 },
 "geom9_point_penalty": {
  "geom": "point",
@@ -388,13 +340,7 @@
  "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom9_point_penalty_chunk1.tsv": {
- "bytes":      210,
-"rows": 4 
-} 
-} 
+"total": 1 
 },
 "geom10_point_penalty": {
  "geom": "point",
@@ -427,13 +373,7 @@
  "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom10_point_penalty_chunk1.tsv": {
- "bytes":      211,
-"rows": 4 
-} 
-} 
+"total": 1 
 },
 "geom11_text_penalty": {
  "geom": "text",
@@ -451,7 +391,7 @@
 "na.rm": false,
 "na.rm": false,
 "vjust":     -0.5,
-"size":        8,
+"size":       12,
 "clickSelects": "sample.id",
 "help_clickSelects": "sample.id" 
 },
@@ -472,13 +412,7 @@
  "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom11_text_penalty_chunk1.tsv": {
- "bytes":      292,
-"rows": 4 
-} 
-} 
+"total": 1 
 },
 "geom12_segment_penalty": {
  "geom": "segment",
@@ -512,13 +446,7 @@
  "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom12_segment_penalty_chunk1.tsv": {
- "bytes":       88,
-"rows": 1 
-} 
-} 
+"total": 1 
 },
 "geom13_segment_penalty": {
  "geom": "segment",
@@ -563,13 +491,7 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom13_segment_penalty_chunk1.tsv": {
- "bytes":     3404,
-"rows": 35 
-} 
-} 
+"total": 1 
 },
 "geom14_line_penalty": {
  "geom": "line",
@@ -600,13 +522,7 @@
  "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom14_line_penalty_chunk1.tsv": {
- "bytes":      127,
-"rows": 6 
-} 
-} 
+"total": 1 
 },
 "geom15_text_penalty": {
  "geom": "text",
@@ -637,13 +553,7 @@
  "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom15_text_penalty_chunk1.tsv": {
- "bytes":       41,
-"rows": 1 
-} 
-} 
+"total": 1 
 },
 "geom16_segment_penalty": {
  "geom": "segment",
@@ -685,13 +595,7 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom16_segment_penalty_chunk1.tsv": {
- "bytes":      611,
-"rows": 9 
-} 
-} 
+"total": 1 
 },
 "geom17_segment_penalty": {
  "geom": "segment",
@@ -733,13 +637,7 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom17_segment_penalty_chunk1.tsv": {
- "bytes":      611,
-"rows": 9 
-} 
-} 
+"total": 1 
 },
 "geom18_segment_penalty": {
  "geom": "segment",
@@ -780,13 +678,7 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom18_segment_penalty_chunk1.tsv": {
- "bytes":     1885,
-"rows": 35 
-} 
-} 
+"total": 1 
 },
 "geom19_segment_penalty": {
  "geom": "segment",
@@ -827,13 +719,7 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom19_segment_penalty_chunk1.tsv": {
- "bytes":     1885,
-"rows": 35 
-} 
-} 
+"total": 1 
 },
 "geom20_rect_penalty": {
  "geom": "rect",
@@ -878,13 +764,7 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom20_rect_penalty_chunk1.tsv": {
- "bytes":     1974,
-"rows": 35 
-} 
-} 
+"total": 1 
 },
 "geom21_rect_penalty": {
  "geom": "rect",
@@ -929,13 +809,7 @@
 "PANEL" 
 ],
 "chunks": 1,
-"total": 1,
-"chunk_info": {
- "geom21_rect_penalty_chunk1.tsv": {
- "bytes":     1974,
-"rows": 35 
-} 
-} 
+"total": 1 
 } 
 },
 "selectors": {
