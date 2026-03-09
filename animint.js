@@ -1567,7 +1567,7 @@ var animint = function (to_select, json_file) {
           eActions = function(groups) {
             // Handle transitions seperately due to unique structure of geom_label_aligned
             var transitionDuration = 0;
-            if (selector_name) {
+            if (Selectors.hasOwnProperty(selector_name)) {
               transitionDuration = +Selectors[selector_name].duration || 0;
             }
             groups.each(function(d) {
@@ -1863,7 +1863,7 @@ var animint = function (to_select, json_file) {
           positionTooltip(tooltip, tooltip.html());
         });
     }
-    if(selector_name){
+    if(Selectors.hasOwnProperty(selector_name)){
       var milliseconds = Selectors[selector_name].duration;
       elements = elements.transition().duration(milliseconds);
     }
@@ -1982,7 +1982,7 @@ var animint = function (to_select, json_file) {
             // Once scales are updated, update the axis ticks if needed
             if(draw_axes){
               // Tick values are same as major grid lines
-              update_axes(p_name, xyaxis, panel_i, grid_vals[1], v_name);
+              update_axes(p_name, xyaxis, panel_i, grid_vals[1]);
             }
             // Update major and minor grid lines
             update_grids(p_name, xyaxis, panel_i, grid_vals, scales);
@@ -1994,7 +1994,7 @@ var animint = function (to_select, json_file) {
 
   // Update the axis ticks etc. once plot is zoomed in/out
   // currently called from update_scales.
-  function update_axes(p_name, axes, panel_i, tick_vals, v_name){
+  function update_axes(p_name, axes, panel_i, tick_vals){
     var orientation;
     if(axes == "x"){
       orientation = "bottom";
@@ -2010,13 +2010,9 @@ var animint = function (to_select, json_file) {
           .tickValues(tick_vals);
     // update existing axis
     var xyaxis_sel = element.select("#"+viz_id+"_"+p_name).select("."+axes+"axis_"+panel_i);
-    var milliseconds = 0;
-    if(v_name && Selectors[v_name].hasOwnProperty("duration")){
-      milliseconds = Selectors[v_name].duration;
-    }
     var xyaxis_g = xyaxis_sel
           .transition()
-          .duration(milliseconds)
+          .duration(1000)
           .call(xyaxis);
     // Fix for issue #273: preserve axis text styling after update
     apply_axis_text_styles(xyaxis_sel, axes, Plots[p_name]);
@@ -2088,6 +2084,9 @@ var animint = function (to_select, json_file) {
   }
 
   var update_selector = function (v_name, value) {
+    if(!Selectors.hasOwnProperty(v_name)){
+      return;
+    }
     value = value + "";
     var s_info = Selectors[v_name];
     if(s_info.type == "single"){

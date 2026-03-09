@@ -45,9 +45,9 @@
 "xmax": "chromEnd/1000",
 "key": "paste(sample.id, chromStart)",
 "linetype": "status",
-"showSelected1": "sample.id",
-"showSelected2": "peaks",
-"showSelected3": "status" 
+"showSelected.variable": "sample.peaks",
+"showSelected.value": "peaks",
+"showSelected2": "status" 
 },
 "params": {
  "na.rm": false,
@@ -55,32 +55,31 @@
 "colour": "#000000",
 "fill": "transparent",
 "size":      1.5,
-"showSelected": [ "sample.id", "peaks", "status" ],
-"help_showSelected": [ "sample.id", "peaks", "status" ] 
+"showSelected": [ "peaks", "status" ],
+"help_showSelected": [ "status", "one of: [McGill0002peaks, McGill0091peaks, McGill0322peaks, McGill0004peaks]" ] 
 },
 "types": {
  "linetype": "numeric",
 "xmin": "numeric",
 "xmax": "numeric",
 "key": "character",
-"showSelected1": "factor",
-"showSelected2": "integer",
-"showSelected3": "character",
+"showSelected.variable": "character",
+"showSelected.value": "integer",
+"showSelected2": "character",
 "PANEL": "factor",
 "group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
- "showSelected1",
-"showSelected2",
-"showSelected3",
-"PANEL" 
+ "showSelected2",
+"PANEL",
+"showSelected.variable",
+"showSelected.value" 
 ],
 "subset_order": [
- "showSelected1",
-"showSelected2",
-"showSelected3",
-"PANEL" 
+ "showSelected2",
+"PANEL",
+"showSelected.variable" 
 ],
 "chunks": 1,
 "total": 1 
@@ -122,8 +121,8 @@
 "xend": "chromEnd/1000",
 "yend": "0",
 "key": "paste(sample.id, chromStart, chromEnd)",
-"showSelected1": "sample.id",
-"showSelected2": "peaks" 
+"showSelected.variable": "sample.peaks",
+"showSelected.value": "peaks" 
 },
 "params": {
  "lineend": "butt",
@@ -131,8 +130,8 @@
 "na.rm": false,
 "colour": "#00BFFF",
 "size":        4,
-"showSelected": [ "sample.id", "peaks" ],
-"help_showSelected": [ "sample.id", "peaks" ] 
+"showSelected": "peaks",
+"help_showSelected": "one of: [McGill0002peaks, McGill0091peaks, McGill0322peaks, McGill0004peaks]" 
 },
 "types": {
  "y": "numeric",
@@ -140,21 +139,20 @@
 "x": "numeric",
 "xend": "numeric",
 "key": "character",
-"showSelected1": "factor",
-"showSelected2": "integer",
+"showSelected.variable": "character",
+"showSelected.value": "integer",
 "PANEL": "factor",
 "group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
- "showSelected1",
-"showSelected2",
-"PANEL" 
+ "PANEL",
+"showSelected.variable",
+"showSelected.value" 
 ],
 "subset_order": [
- "showSelected1",
-"showSelected2",
-"PANEL" 
+ "PANEL",
+"showSelected.variable" 
 ],
 "chunks": 1,
 "total": 1 
@@ -166,43 +164,42 @@
  "x": "chromStart/1000",
 "y": "0",
 "key": "paste(sample.id, chromStart)",
-"showSelected1": "sample.id",
-"showSelected2": "peaks" 
+"showSelected.variable": "sample.peaks",
+"showSelected.value": "peaks" 
 },
 "params": {
  "na.rm": false,
 "na.rm": false,
 "colour": "#000000",
 "fill": "#00BFFF",
-"showSelected": [ "sample.id", "peaks" ],
-"help_showSelected": [ "sample.id", "peaks" ] 
+"showSelected": "peaks",
+"help_showSelected": "one of: [McGill0002peaks, McGill0091peaks, McGill0322peaks, McGill0004peaks]" 
 },
 "types": {
  "y": "numeric",
 "x": "numeric",
 "key": "character",
-"showSelected1": "factor",
-"showSelected2": "integer",
+"showSelected.variable": "character",
+"showSelected.value": "integer",
 "PANEL": "factor",
 "group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
- "showSelected1",
-"showSelected2",
-"PANEL" 
+ "PANEL",
+"showSelected.variable",
+"showSelected.value" 
 ],
 "subset_order": [
- "showSelected1",
-"showSelected2",
-"PANEL" 
+ "PANEL",
+"showSelected.variable" 
 ],
 "chunks": 1,
 "total": 1 
 },
-"geom6_text_penalty": {
- "geom": "text",
-"classed": "geom6_text_penalty",
+"geom6_labelaligned_penalty": {
+ "geom": "label_aligned",
+"classed": "geom6_labelaligned_penalty",
 "aes": {
  "x": "feature",
 "y": "log.penalty",
@@ -211,21 +208,25 @@
 "hjust": "hjust" 
 },
 "params": {
- "parse": false,
-"check_overlap": false,
+ "label_r":     0.15,
+"alignment": "vertical",
+"min_distance":      0.1,
+"background_rect": true,
 "na.rm": false,
 "na.rm": false,
 "colour": "#0000FF",
-"size":       12 
+"size":        4,
+"fill": "transparent",
+"label.size":        0 
 },
 "types": {
  "y": "numeric",
 "x": "numeric",
 "label": "character",
 "vjust": "numeric",
+"hjust": "numeric",
 "PANEL": "factor",
-"group": "character",
-"anchor": "character" 
+"group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
@@ -391,7 +392,7 @@
 "na.rm": false,
 "na.rm": false,
 "vjust":     -0.5,
-"size":       12,
+"size":        4,
 "clickSelects": "sample.id",
 "help_clickSelects": "sample.id" 
 },
@@ -454,19 +455,19 @@
 "aes": {
  "x": "log.max.count",
 "y": "notInf(min.log.lambda)",
+"key": "sample.id",
 "yend": "notInf(max.log.lambda)",
 "xend": "log.max.count",
-"key": "paste(sample.id, peaks)",
-"showSelected1": "sample.id",
-"showSelected2": "peaks" 
+"showSelected.variable": "sample.peaks",
+"showSelected.value": "peaks" 
 },
 "params": {
  "lineend": "butt",
 "na.rm": false,
 "na.rm": false,
 "size":        1,
-"showSelected": [ "sample.id", "peaks" ],
-"help_showSelected": [ "sample.id", "peaks" ] 
+"showSelected": "peaks",
+"help_showSelected": "one of: [McGill0002peaks, McGill0091peaks, McGill0322peaks, McGill0004peaks]" 
 },
 "types": {
  "y": "numeric",
@@ -474,21 +475,20 @@
 "x": "numeric",
 "xend": "numeric",
 "key": "character",
-"showSelected1": "character",
-"showSelected2": "integer",
+"showSelected.variable": "character",
+"showSelected.value": "integer",
 "PANEL": "factor",
 "group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
- "showSelected1",
-"showSelected2",
-"PANEL" 
+ "PANEL",
+"showSelected.variable",
+"showSelected.value" 
 ],
 "subset_order": [
- "showSelected1",
-"showSelected2",
-"PANEL" 
+ "PANEL",
+"showSelected.variable" 
 ],
 "chunks": 1,
 "total": 1 
@@ -721,35 +721,32 @@
 "chunks": 1,
 "total": 1 
 },
-"geom20_rect_penalty": {
- "geom": "rect",
-"classed": "geom20_rect_penalty",
+"geom20_widerect_penalty": {
+ "geom": "widerect",
+"classed": "geom20_widerect_penalty",
 "aes": {
- "xmin": "0",
-"xmax": "9",
-"ymin": "notInf(min.log.lambda)",
+ "ymin": "notInf(min.log.lambda)",
 "ymax": "notInf(max.log.lambda)",
 "key": "peaks",
-"clickSelects": "peaks",
+"clickSelects.variable": "sample.peaks",
+"clickSelects.value": "peaks",
 "showSelected1": "sample.id" 
 },
 "params": {
  "na.rm": false,
 "na.rm": false,
-"alpha":     0.25,
-"fill": "#E5E5E5",
+"alpha":      0.2,
 "showSelected": "sample.id",
 "clickSelects": "peaks",
 "help_showSelected": "sample.id",
-"help_clickSelects": "peaks" 
+"help_clickSelects": "one of: [McGill0002peaks, McGill0091peaks, McGill0322peaks, McGill0004peaks]" 
 },
 "types": {
  "ymin": "numeric",
 "ymax": "numeric",
-"xmin": "numeric",
-"xmax": "numeric",
 "key": "integer",
-"clickSelects": "integer",
+"clickSelects.variable": "character",
+"clickSelects.value": "integer",
 "showSelected1": "character",
 "PANEL": "factor",
 "group": "character" 
@@ -766,35 +763,32 @@
 "chunks": 1,
 "total": 1 
 },
-"geom21_rect_penalty": {
- "geom": "rect",
-"classed": "geom21_rect_penalty",
+"geom21_widerect_penalty": {
+ "geom": "widerect",
+"classed": "geom21_widerect_penalty",
 "aes": {
- "xmin": "0",
-"xmax": "9",
-"ymin": "notInf(min.log.lambda)",
+ "ymin": "notInf(min.log.lambda)",
 "ymax": "notInf(max.log.lambda)",
 "key": "peaks",
-"clickSelects": "peaks",
+"clickSelects.variable": "sample.peaks",
+"clickSelects.value": "peaks",
 "showSelected1": "sample.id" 
 },
 "params": {
  "na.rm": false,
 "na.rm": false,
-"alpha":     0.25,
-"fill": "#E5E5E5",
+"alpha":      0.2,
 "showSelected": "sample.id",
 "clickSelects": "peaks",
 "help_showSelected": "sample.id",
-"help_clickSelects": "peaks" 
+"help_clickSelects": "one of: [McGill0002peaks, McGill0091peaks, McGill0322peaks, McGill0004peaks]" 
 },
 "types": {
  "ymin": "numeric",
 "ymax": "numeric",
-"xmin": "numeric",
-"xmax": "numeric",
 "key": "integer",
-"clickSelects": "integer",
+"clickSelects.variable": "character",
+"clickSelects.value": "integer",
 "showSelected1": "character",
 "PANEL": "factor",
 "group": "character" 
@@ -811,6 +805,12 @@
 "chunks": 1,
 "total": 1 
 } 
+},
+"duration": {
+ "McGill0002peaks":     2000,
+"McGill0091peaks":     2000,
+"McGill0322peaks":     2000,
+"McGill0004peaks":     2000 
 },
 "selectors": {
  "status": {
@@ -835,45 +835,89 @@
  "geom1_tallrect_coverage" 
 ] 
 },
-"sample.id": {
- "is.variable.value": false,
+"McGill0002peaks": {
+ "is.variable.value": true,
 "type": "single",
 "showSelected": true,
 "clickSelects": true,
-"selected": "McGill0002",
-"levels": [ "McGill0002", "McGill0091", "McGill0322", "McGill0004" ],
+"selected": "0",
 "update": [
  "geom2_tallrect_coverage",
 "geom4_segment_coverage",
 "geom5_point_coverage",
-"geom7_segment_penalty",
+"geom13_segment_penalty",
+"geom20_widerect_penalty",
+"geom21_widerect_penalty" 
+],
+"duration":     2000 
+},
+"McGill0091peaks": {
+ "is.variable.value": true,
+"type": "single",
+"showSelected": true,
+"clickSelects": true,
+"selected": "0",
+"update": [
+ "geom2_tallrect_coverage",
+"geom4_segment_coverage",
+"geom5_point_coverage",
+"geom13_segment_penalty",
+"geom20_widerect_penalty",
+"geom21_widerect_penalty" 
+],
+"duration":     2000 
+},
+"McGill0322peaks": {
+ "is.variable.value": true,
+"type": "single",
+"showSelected": true,
+"clickSelects": true,
+"selected": "0",
+"update": [
+ "geom2_tallrect_coverage",
+"geom4_segment_coverage",
+"geom5_point_coverage",
+"geom13_segment_penalty",
+"geom20_widerect_penalty",
+"geom21_widerect_penalty" 
+],
+"duration":     2000 
+},
+"McGill0004peaks": {
+ "is.variable.value": true,
+"type": "single",
+"showSelected": true,
+"clickSelects": true,
+"selected": "0",
+"update": [
+ "geom2_tallrect_coverage",
+"geom4_segment_coverage",
+"geom5_point_coverage",
+"geom13_segment_penalty",
+"geom20_widerect_penalty",
+"geom21_widerect_penalty" 
+],
+"duration":     2000 
+},
+"sample.id": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"selected": "McGill0002",
+"levels": [ "McGill0002", "McGill0004", "McGill0091", "McGill0322" ],
+"update": [
+ "geom7_segment_penalty",
 "geom8_point_penalty",
 "geom9_point_penalty",
 "geom10_point_penalty",
 "geom11_text_penalty",
-"geom13_segment_penalty",
 "geom16_segment_penalty",
 "geom17_segment_penalty",
 "geom18_segment_penalty",
 "geom19_segment_penalty",
-"geom20_rect_penalty",
-"geom21_rect_penalty" 
-] 
-},
-"peaks": {
- "is.variable.value": false,
-"type": "single",
-"showSelected": true,
-"clickSelects": true,
-"selected": "2",
-"levels": [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ],
-"update": [
- "geom2_tallrect_coverage",
-"geom4_segment_coverage",
-"geom5_point_coverage",
-"geom13_segment_penalty",
-"geom20_rect_penalty",
-"geom21_rect_penalty" 
+"geom20_widerect_penalty",
+"geom21_widerect_penalty" 
 ] 
 } 
 },
@@ -1218,7 +1262,7 @@
 "xangle":        0,
 "xanchor": "middle",
 "ytitle": "aligned read coverage",
-"strip_text_ysize": "12pt",
+"strip_text_ysize": "8pt",
 "ysize": "12pt",
 "yangle":        0,
 "yanchor": "end",
@@ -1238,7 +1282,7 @@
 "title_size": "14.4pt",
 "options": {
  "width":      800,
-"height":      400 
+"height":      500 
 },
 "span": {
  "rowspan": null,
@@ -1308,13 +1352,7 @@
         0,
        1,
        2,
-       3,
-       4,
-       5,
-       6,
-       7,
-       8,
-       9 
+       3 
 ],
 [
         0,
@@ -1375,19 +1413,7 @@
      1.5,
        2,
      2.5,
-       3,
-     3.5,
-       4,
-     4.5,
-       5,
-     5.5,
-       6,
-     6.5,
-       7,
-     7.5,
-       8,
-     8.5,
-       9 
+       3 
 ],
 [
         0,
@@ -1464,27 +1490,15 @@
         0,
        1,
        2,
-       3,
-       4,
-       5,
-       6,
-       7,
-       8,
-       9 
+       3 
 ],
 "xlab": [
  "0",
 "1",
 "2",
-"3",
-"4",
-"5",
-"6",
-"7",
-"8",
-"9" 
+"3" 
 ],
-"xrange": [    -0.45,     9.45 ],
+"xrange": [    -0.15,     3.15 ],
 "xline": false,
 "xticks": true,
 "y": [
@@ -1628,7 +1642,7 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom6_text_penalty",
+ "geom6_labelaligned_penalty",
 "geom7_segment_penalty",
 "geom8_point_penalty",
 "geom9_point_penalty",
@@ -1642,8 +1656,8 @@
 "geom17_segment_penalty",
 "geom18_segment_penalty",
 "geom19_segment_penalty",
-"geom20_rect_penalty",
-"geom21_rect_penalty" 
+"geom20_widerect_penalty",
+"geom21_widerect_penalty" 
 ] 
 } 
 },
