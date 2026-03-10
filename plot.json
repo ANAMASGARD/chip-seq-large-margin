@@ -215,7 +215,7 @@
 "na.rm": false,
 "na.rm": false,
 "colour": "#0000FF",
-"size":        3,
+"size":        6,
 "fill": "transparent",
 "label.size":        0 
 },
@@ -392,7 +392,7 @@
 "na.rm": false,
 "na.rm": false,
 "vjust":     -0.5,
-"size":        5,
+"size":        6,
 "clickSelects": "sample.id",
 "help_clickSelects": "sample.id" 
 },
