@@ -392,7 +392,7 @@
 "na.rm": false,
 "na.rm": false,
 "vjust":     -0.5,
-"size":       16,
+"size":        5,
 "clickSelects": "sample.id",
 "help_clickSelects": "sample.id" 
 },
@@ -840,7 +840,7 @@
 "type": "single",
 "showSelected": true,
 "clickSelects": true,
-"selected": "0",
+"selected": "2",
 "update": [
  "geom2_tallrect_coverage",
 "geom4_segment_coverage",
@@ -856,7 +856,7 @@
 "type": "single",
 "showSelected": true,
 "clickSelects": true,
-"selected": "0",
+"selected": "1",
 "update": [
  "geom2_tallrect_coverage",
 "geom4_segment_coverage",
@@ -872,7 +872,7 @@
 "type": "single",
 "showSelected": true,
 "clickSelects": true,
-"selected": "0",
+"selected": "1",
 "update": [
  "geom2_tallrect_coverage",
 "geom4_segment_coverage",
@@ -888,7 +888,7 @@
 "type": "single",
 "showSelected": true,
 "clickSelects": true,
-"selected": "0",
+"selected": "2",
 "update": [
  "geom2_tallrect_coverage",
 "geom4_segment_coverage",
