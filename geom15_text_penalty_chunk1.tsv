@@ -1,5 +1,2 @@
 y	x	label	PANEL
 6	5	log(max(coverage))	3
-6	5	log(max(coverage))	6
-6	5	log(max(coverage))	9
-6	5	log(max(coverage))	12
