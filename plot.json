@@ -197,9 +197,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom6_text_penalty": {
- "geom": "text",
-"classed": "geom6_text_penalty",
+"geom6_labelaligned_penalty": {
+ "geom": "label_aligned",
+"classed": "geom6_labelaligned_penalty",
 "aes": {
  "x": "feature",
 "y": "log.penalty",
@@ -208,21 +208,25 @@
 "hjust": "hjust" 
 },
 "params": {
- "parse": false,
-"check_overlap": false,
+ "label_r":     0.15,
+"alignment": "vertical",
+"min_distance":      0.1,
+"background_rect": true,
 "na.rm": false,
 "na.rm": false,
 "colour": "#0000FF",
-"size":        5 
+"size":        8,
+"fill": "transparent",
+"label.size":        0 
 },
 "types": {
  "y": "numeric",
 "x": "numeric",
 "label": "character",
 "vjust": "numeric",
+"hjust": "numeric",
 "PANEL": "factor",
-"group": "character",
-"anchor": "character" 
+"group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
@@ -388,7 +392,7 @@
 "na.rm": false,
 "na.rm": false,
 "vjust":     -0.5,
-"size":        5,
+"size":        8,
 "clickSelects": "sample.id",
 "help_clickSelects": "sample.id" 
 },
@@ -1638,7 +1642,7 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom6_text_penalty",
+ "geom6_labelaligned_penalty",
 "geom7_segment_penalty",
 "geom8_point_penalty",
 "geom9_point_penalty",
