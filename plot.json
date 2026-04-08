@@ -197,9 +197,9 @@
 "chunks": 1,
 "total": 1 
 },
-"geom6_labelaligned_penalty": {
- "geom": "label_aligned",
-"classed": "geom6_labelaligned_penalty",
+"geom6_text_penalty": {
+ "geom": "text",
+"classed": "geom6_text_penalty",
 "aes": {
  "x": "feature",
 "y": "log.penalty",
@@ -208,25 +208,21 @@
 "hjust": "hjust" 
 },
 "params": {
- "label_r":     0.15,
-"alignment": "vertical",
-"min_distance":      0.1,
-"background_rect": true,
+ "parse": false,
+"check_overlap": false,
 "na.rm": false,
 "na.rm": false,
 "colour": "#0000FF",
-"size":        9,
-"fill": "transparent",
-"label.size":        0 
+"size":        5 
 },
 "types": {
  "y": "numeric",
 "x": "numeric",
 "label": "character",
 "vjust": "numeric",
-"hjust": "numeric",
 "PANEL": "factor",
-"group": "character" 
+"group": "character",
+"anchor": "character" 
 },
 "chunk_order": [],
 "nest_order": [
@@ -252,8 +248,8 @@
  "lineend": "butt",
 "na.rm": false,
 "na.rm": false,
-"size":       12,
-"alpha":      0.6,
+"size":        7,
+"alpha":      0.7,
 "colour": "#00FF00",
 "clickSelects": "sample.id",
 "help_clickSelects": "sample.id" 
@@ -392,7 +388,7 @@
 "na.rm": false,
 "na.rm": false,
 "vjust":     -0.5,
-"size":        9,
+"size":        5,
 "clickSelects": "sample.id",
 "help_clickSelects": "sample.id" 
 },
@@ -563,14 +559,17 @@
 "y": "min.log.lambda",
 "yend": "max.log.lambda",
 "xend": "peaks",
-"key": "paste(sample.id, peaks)" 
+"key": "paste(sample.id, peaks)",
+"showSelected1": "sample.id" 
 },
 "params": {
  "lineend": "butt",
 "na.rm": false,
 "na.rm": false,
 "size":        4,
-"colour": "#00FF00" 
+"colour": "#00FF00",
+"showSelected": "sample.id",
+"help_showSelected": "sample.id" 
 },
 "types": {
  "y": "numeric",
@@ -578,15 +577,18 @@
 "x": "numeric",
 "xend": "numeric",
 "key": "character",
+"showSelected1": "character",
 "PANEL": "factor",
 "group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "subset_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "chunks": 1,
 "total": 1 
@@ -599,14 +601,17 @@
 "y": "min.log.lambda",
 "yend": "max.log.lambda",
 "xend": "errors",
-"key": "paste(sample.id, peaks)" 
+"key": "paste(sample.id, peaks)",
+"showSelected1": "sample.id" 
 },
 "params": {
  "lineend": "butt",
 "na.rm": false,
 "na.rm": false,
 "size":        4,
-"colour": "#00FF00" 
+"colour": "#00FF00",
+"showSelected": "sample.id",
+"help_showSelected": "sample.id" 
 },
 "types": {
  "y": "numeric",
@@ -614,15 +619,18 @@
 "x": "numeric",
 "xend": "numeric",
 "key": "character",
+"showSelected1": "character",
 "PANEL": "factor",
 "group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "subset_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "chunks": 1,
 "total": 1 
@@ -635,13 +643,16 @@
 "y": "notInf(min.log.lambda)",
 "yend": "notInf(max.log.lambda)",
 "xend": "peaks",
-"key": "peaks" 
+"key": "peaks",
+"showSelected1": "sample.id" 
 },
 "params": {
  "lineend": "butt",
 "na.rm": false,
 "na.rm": false,
-"size":        2 
+"size":        2,
+"showSelected": "sample.id",
+"help_showSelected": "sample.id" 
 },
 "types": {
  "y": "numeric",
@@ -649,15 +660,18 @@
 "x": "numeric",
 "xend": "numeric",
 "key": "integer",
+"showSelected1": "character",
 "PANEL": "factor",
 "group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "subset_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "chunks": 1,
 "total": 1 
@@ -670,13 +684,16 @@
 "y": "notInf(min.log.lambda)",
 "yend": "notInf(max.log.lambda)",
 "xend": "errors",
-"key": "peaks" 
+"key": "peaks",
+"showSelected1": "sample.id" 
 },
 "params": {
  "lineend": "butt",
 "na.rm": false,
 "na.rm": false,
-"size":        2 
+"size":        2,
+"showSelected": "sample.id",
+"help_showSelected": "sample.id" 
 },
 "types": {
  "y": "numeric",
@@ -684,15 +701,18 @@
 "x": "numeric",
 "xend": "numeric",
 "key": "integer",
+"showSelected1": "character",
 "PANEL": "factor",
 "group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "subset_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "chunks": 1,
 "total": 1 
@@ -705,13 +725,16 @@
 "ymax": "notInf(max.log.lambda)",
 "key": "peaks",
 "clickSelects.variable": "sample.peaks",
-"clickSelects.value": "peaks" 
+"clickSelects.value": "peaks",
+"showSelected1": "sample.id" 
 },
 "params": {
  "na.rm": false,
 "na.rm": false,
 "alpha":      0.2,
+"showSelected": "sample.id",
 "clickSelects": "peaks",
+"help_showSelected": "sample.id",
 "help_clickSelects": "one of: [McGill0002peaks, McGill0091peaks, McGill0322peaks, McGill0004peaks]" 
 },
 "types": {
@@ -720,15 +743,18 @@
 "key": "integer",
 "clickSelects.variable": "character",
 "clickSelects.value": "integer",
+"showSelected1": "character",
 "PANEL": "factor",
 "group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "subset_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "chunks": 1,
 "total": 1 
@@ -741,13 +767,16 @@
 "ymax": "notInf(max.log.lambda)",
 "key": "peaks",
 "clickSelects.variable": "sample.peaks",
-"clickSelects.value": "peaks" 
+"clickSelects.value": "peaks",
+"showSelected1": "sample.id" 
 },
 "params": {
  "na.rm": false,
 "na.rm": false,
 "alpha":      0.2,
+"showSelected": "sample.id",
 "clickSelects": "peaks",
+"help_showSelected": "sample.id",
 "help_clickSelects": "one of: [McGill0002peaks, McGill0091peaks, McGill0322peaks, McGill0004peaks]" 
 },
 "types": {
@@ -756,15 +785,18 @@
 "key": "integer",
 "clickSelects.variable": "character",
 "clickSelects.value": "integer",
+"showSelected1": "character",
 "PANEL": "factor",
 "group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "subset_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "chunks": 1,
 "total": 1 
@@ -867,6 +899,7 @@
  "is.variable.value": false,
 "type": "single",
 "clickSelects": true,
+"showSelected": true,
 "selected": "McGill0002",
 "levels": [ "McGill0002", "McGill0004", "McGill0091", "McGill0322" ],
 "update": [
@@ -874,7 +907,13 @@
 "geom8_point_penalty",
 "geom9_point_penalty",
 "geom10_point_penalty",
-"geom11_text_penalty" 
+"geom11_text_penalty",
+"geom16_segment_penalty",
+"geom17_segment_penalty",
+"geom18_segment_penalty",
+"geom19_segment_penalty",
+"geom20_widerect_penalty",
+"geom21_widerect_penalty" 
 ] 
 } 
 },
@@ -1591,7 +1630,7 @@
 "title_size": "14.4pt",
 "options": {
  "width":      800,
-"height":      700 
+"height":      500 
 },
 "span": {
  "rowspan": null,
@@ -1599,7 +1638,7 @@
 "last_in_row": null 
 },
 "geoms": [
- "geom6_labelaligned_penalty",
+ "geom6_text_penalty",
 "geom7_segment_penalty",
 "geom8_point_penalty",
 "geom9_point_penalty",
