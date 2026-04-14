@@ -212,7 +212,7 @@
 "na.rm": false,
 "na.rm": false,
 "colour": "#0000FF",
-"size":        8 
+"size":       12 
 },
 "types": {
  "y": "numeric",
