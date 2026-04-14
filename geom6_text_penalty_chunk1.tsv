@@ -1,9 +1,8 @@
 y	x	label	PANEL	anchor
-13.3	5.8	0 errors	3	middle
-12.8	5.8	large	3	middle
-12.3	5.8	margin	3	middle
-11.2	5.8	0 errors	3	start
-10.7	5.8	small	3	start
-10.2	5.8	margin	3	start
-9.25	5.8	1 error	3	start
-8.75	5.8	constant	3	start
+12.8	5.8	"0 errors
+large margin"	3	middle
+10.7	5.8	"0 errors
+small
+margin"	3	start
+9	5.8	"1 error
+constant"	3	start
