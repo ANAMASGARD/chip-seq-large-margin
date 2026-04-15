@@ -203,7 +203,8 @@
 "aes": {
  "x": "x",
 "y": "log.penalty",
-"label": "label" 
+"label": "label",
+"hjust": "hjust" 
 },
 "params": {
  "parse": false,
@@ -211,15 +212,15 @@
 "na.rm": false,
 "na.rm": false,
 "colour": "#0000FF",
-"size":       12,
-"anchor": "end" 
+"size":       11 
 },
 "types": {
  "y": "numeric",
 "x": "numeric",
 "label": "character",
 "PANEL": "factor",
-"group": "character" 
+"group": "character",
+"anchor": "character" 
 },
 "chunk_order": [],
 "nest_order": [

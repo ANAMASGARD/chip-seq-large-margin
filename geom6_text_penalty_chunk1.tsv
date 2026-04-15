@@ -1,8 +1,8 @@
-y	x	label	PANEL
-12.8	7.2	"0 errors
-large margin"	3
+y	x	label	PANEL	anchor
+13.2	6.2	"0 errors
+large margin"	3	end
 10.2	7.2	"0 errors
 small
-margin"	3
+margin"	3	end
 9	7.2	"1 error
-constant"	3
+constant"	3	end
