@@ -201,10 +201,9 @@
  "geom": "text",
 "classed": "geom6_text_penalty",
 "aes": {
- "x": "feature",
+ "x": "x",
 "y": "log.penalty",
-"label": "label",
-"hjust": "hjust" 
+"label": "label" 
 },
 "params": {
  "parse": false,
@@ -212,15 +211,15 @@
 "na.rm": false,
 "na.rm": false,
 "colour": "#0000FF",
-"size":       12 
+"size":       12,
+"anchor": "end" 
 },
 "types": {
  "y": "numeric",
 "x": "numeric",
 "label": "character",
 "PANEL": "factor",
-"group": "character",
-"anchor": "character" 
+"group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
